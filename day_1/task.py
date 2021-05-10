@@ -18,6 +18,8 @@ import math
 #
 # Of course, your expense report is much larger. Find the two entries that sum to 2020;
 # what do you get if you multiply them together?
+
+
 def getMultiplicationOfTwo(data):
     maximum = 2020
     values = [-1] * (maximum + 1)
@@ -42,6 +44,7 @@ def getMultiplicationOfTwo(data):
 #
 # In your expense report, what is the product of the three entries that sum to 2020?
 
+
 def getMultiplicationOfThree(data):
     maximum = 2020
     values = [-1] * (maximum + 1)
@@ -59,11 +62,7 @@ def getMultiplicationOfThree(data):
                             return values[i] * values[j] * values[k]
 
 
-# Press the green button in the gutter to run the script.
-with open('input.txt') as f:
-    data = f.readlines()
-    data = [int(x.strip()) for x in data]
-print(getMultiplicationOfTwo(data))
-print(getMultiplicationOfThree(data))
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def task(data):
+    data = [int(x) for x in data]
+    print(getMultiplicationOfTwo(data))
+    print(getMultiplicationOfThree(data))
