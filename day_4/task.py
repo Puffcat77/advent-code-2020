@@ -186,25 +186,7 @@ def parseLinesToPassports(l):
     return passport
 
 
-def getData(path):
-    lines = []
-    i = 0
-    with open(path) as f:
-        for line in f:
-            if line != '\n':
-                if i < len(lines):
-                    lines[i] += ' ' + line
-                else:
-                    lines.append(line)
-            else:
-                i += 1
-    for i in range(len(lines)):
-        lines[i] = lines[i].replace('\n', '')
-    data = [parseLinesToPassports(l) for l in lines]
-    return data
-
-
-def task(dataPath):
-    data = getData(dataPath)
+def task(data):
+    data = parseLinesToPassports(data)
     print(partOne(data))
     print(partTwo(data))
