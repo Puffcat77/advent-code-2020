@@ -6,6 +6,8 @@ from day_5 import task as task5
 from day_6 import task as task6
 from day_7 import task as task7
 from day_8 import task as task8
+from day_9 import task as task9
+from day_10 import task as task10
 
 
 def getData(path):
@@ -40,4 +42,6 @@ if __name__ == '__main__':
     # task5.task(getData('day_5/input.txt'))
     # task6.task(getDataWithEmptyLines('day_6/input.txt'))
     # task7.task(getData('day_7/input.txt'))
-    task8.task(getData('day_8/input.txt'))
+    # task8.task(getData('day_8/input.txt'))
+    # task9.task(getData('day_9/input.txt'))
+    task10.task(getData('day_10/input.txt'))
