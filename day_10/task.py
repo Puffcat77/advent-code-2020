@@ -216,13 +216,7 @@ def countPermutations(arr):
         while subArr.count(1) >= j:
             change = [j] * changeTime
             ones = [1] * arr.count(1)
-            rest = arr[arr.count(1):]
-            subArr = ones[:(-j * changeTime)] + change + rest
-            otherJolt = jolts
-            if j in otherJolt:
-                otherJolt.remove(j)
-            if subArr.count(1) >= otherJolt[0]:
-                res += countPermutations(subArr)
+            subArr = ones[:(-j * changeTime)] + change
             res += len(allPerms(subArr))
             changeTime += 1
     return res
