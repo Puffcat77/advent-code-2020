@@ -13,6 +13,7 @@ from day_12 import task as task12
 from day_13 import task as task13
 from day_14 import task as task14
 from day_15 import task as task15
+from day_16 import task as task16
 
 
 def getData(path):
@@ -54,4 +55,5 @@ if __name__ == '__main__':
     # task12.task(getData('day_12/input.txt'))
     # task13.task(getData('day_13/input.txt'))
     # task14.task(getData('day_14/input.txt'))
-    task15.task(getData('day_15/input.txt'))
+    # task15.task(getData('day_15/input.txt'))
+    task16.task(getData('day_16/input.txt'))
